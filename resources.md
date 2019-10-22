@@ -1,3 +1,9 @@
+---
+layout: page
+title: Resources
+permalink: /resources/
+---
+
 Curated list of various resources I've found useful for a variety of topics
 
 ## Blogs
