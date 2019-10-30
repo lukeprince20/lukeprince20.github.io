@@ -67,3 +67,21 @@ Curated list of various resources I've found useful for a variety of topics
 
 ## Automation
 [How To Use Fabric To Automate Administration Tasks And Deployments](https://www.digitalocean.com/community/tutorials/how-to-use-fabric-to-automate-administration-tasks-and-deployments)
+
+## Password Managers
+[Managing Your Passwords on the Command Line in Linux with pass](https://nickjanetakis.com/blog/managing-your-passwords-on-the-command-line-in-linux-with-pass)
+
+[SpiderOak Encryptr](https://spideroak.com/encryptr/)
+
+## VPNs
+[Reddit VPN video](https://www.reddit.com/r/videos/comments/doawcl/this_video_is_sponsored_by_vpn_tom_scott_on/)
+
+## WebAssembly
+[Developer's Guide](https://webassembly.org/getting-started/developers-guide/)
+
+[Emscripten SDK](https://github.com/emscripten-core/emsdk)
+
+[WASI](https://wasi.dev/)
+
+## Linux
+[Linux From Scratch](http://www.linuxfromscratch.org/lfs/view/stable/index.html)
