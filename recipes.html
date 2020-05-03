@@ -1,0 +1,9 @@
+---
+title: Recipes
+---
+<h1>Recipes</h1>
+
+{% assign recipe-posts = site.posts | where: "categories","recipe" %}
+{% for post in recipe-posts %}
+<a href="{{ site.baseurl }}{{ post.url }}"><span>{{ post.title }}</span></a></br>
+{% endfor %}

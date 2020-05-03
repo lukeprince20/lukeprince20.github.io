@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: About
+  link: /about/
+- name: Engineering
+  link: /engineering/
+- name: Programming
+  link: /programming/
+- name: Recipes
+  link: /recipes/

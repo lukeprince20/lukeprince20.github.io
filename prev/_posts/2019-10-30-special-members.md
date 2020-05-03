@@ -1,10 +1,8 @@
 ---
-layout: default
-title: "Understanding C++ Special Members"
-date: 2019-10-14
-categories: 
-  - programming
-  - c++
+layout: post
+title:  "Understanding C++ Special Members"
+date:   2019-10-14 21:11:04 -0400
+categories: c++
 ---
 
 {% highlight cpp %}
@@ -19,7 +17,7 @@ public:
 };
 
 class Derived : public Base {};
-{% endhighlight %}
+{% endhighlight cpp %}
 
 {% highlight cpp %}
 void test_special_members() {
@@ -29,14 +27,14 @@ void test_special_members() {
   auto& ca = cc; ca = dc;            // copy assignment
   auto& ma = mc; ma = std::move(mc); // move assignment
 }
-{% endhighlight %}
+{% endhighlight cpp %}
 
 {% highlight cpp %}
 int main() {
     test_special_members();
     return 0;
 }
-{% endhighlight %}
+{% endhighlight cpp %}
 
 # Class Templates
 {% highlight cpp %}
@@ -50,7 +48,7 @@ public:
     //normal& operator=(const normal&) = default;
     //normal& operator=(normal&&) = default;
 };
-{% endhighlight %}
+{% endhighlight cpp %}
 
 {% highlight cpp %}
 class immoveable
@@ -63,7 +61,7 @@ public:
     //immoveable(immoveable&&) = delete;
     //immoveable& operator=(immoveable&&) = delete;
 };
-{% endhighlight %}
+{% endhighlight cpp %}
 
 {% highlight cpp %}
 class container
@@ -76,7 +74,7 @@ public:
     container& operator=(const container& other);
     container& operator=(container&& other) noexcept;
 };
-{% endhighlight %}
+{% endhighlight cpp %}
 
 {% highlight cpp %}
 class resource_handle
@@ -89,8 +87,7 @@ public:
     resource_handle(resource_handle&& other) noexcept;
     resource_handle& operator=(resource_handle&& other) noexcept;
 };
-{% endhighlight %}
-
+{% endhighlight cpp %}
 # Resources
 [Howard Hinnant: Move Semantics](https://howardhinnant.github.io/bloomberg_2016.pdf)
 
@@ -99,3 +96,6 @@ public:
 [Special Member Guidelines](https://foonathan.net/special-member-chart/)
 
 [Abseil TotW #143: C++11 Deleted Functions](https://abseil.io/tips/143)
+
+
+

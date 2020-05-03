@@ -1,0 +1,9 @@
+---
+title: Programming
+---
+<h1>Programming Topics</h1>
+
+{% assign programming-posts = site.posts | where: "categories","programming" %}
+{% for post in programming-posts %}
+<a href="{{ site.baseurl }}{{ post.url }}"><span>{{ post.title }}</span></a></br>
+{% endfor %}
