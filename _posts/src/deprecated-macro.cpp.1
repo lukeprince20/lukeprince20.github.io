@@ -1,0 +1,12 @@
+#if __cplusplus >= 201402L || (defined(_MSVC_LANG) && _MSVC_LANG >= 201402L)
+#   define DEPRECATED [[deprecated]]
+#else
+#   if defined(__GNUC__) || defined(__clang__) || defined(__INTEL_COMPILER)
+#       define DEPRECATED __attribute__((deprecated))
+#   elif defined(_MSC_VER)
+#       define DEPRECATED __declspec(deprecated)
+#   else
+#       pragma message("WARNING: DEPRECATED not implemented")
+#       define DEPRECATED
+#   endif
+#endif

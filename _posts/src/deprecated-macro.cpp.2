@@ -1,0 +1,9 @@
+DEPRECATED void test(int* x) {*x = *x + 1;}
+int test(int x) {return x + 1;}
+
+int main() {
+    int m = 20;
+    test(&m); // deprecated
+    int n = test(20);
+    return m+n;
+}
